@@ -1,4 +1,4 @@
-import { getCSS } from "./common.js";
+import { getCSS } from "./common.js"
 
 async function quantidadeUsuariosPorRede() {
     const url = 'https://raw.githubusercontent.com/guilhermeonrails/api/main/numero-usuarios.json'
@@ -14,17 +14,16 @@ async function quantidadeUsuariosPorRede() {
             type: 'bar',
             marker: {
                 color: getCSS('--primary-color')
-              }
+            }
         }
     ]
 
-
     const layout = {
-        plot_bgcolor: getCSS('--bg-color')
+        plot_bgcolor: getCSS('--bg-color'),
         paper_bgcolor: getCSS('--bg-color')
-    }  
 
-    
+    }
+
     const grafico = document.createElement('div')
     grafico.className = 'grafico'
     document.getElementById('graficos-container').appendChild(grafico)
