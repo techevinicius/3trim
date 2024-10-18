@@ -1,7 +1,7 @@
 import { getCSS, criarGrafico, incluirTexto } from "./common.js"
 
 
-async function redesFavoritasMundo() {
+async function RedesFavoritasMundo() {
     const url = 'https://raw.githubusercontent.com/guilhermeonrails/api/main/redes-favoritas.json'
     const res = await fetch(url)
     const dados = await res.json()
@@ -44,4 +44,4 @@ async function redesFavoritasMundo() {
 }
 
 
-redesFavoritasMundo()
+RedesFavoritasMundo()
